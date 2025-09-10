@@ -6,7 +6,18 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    res.send("Helloo!")
+    res.send(req.body)
+})
+
+router.patch('/:id',(req, res) =>{
+    res.send({
+        id: req.params.id,
+        body: req.body 
+    } )
+}) 
+
+router.delete('/:id', (req, res)=>{
+    res.send({id: req.params.id})
 })
 
 module.exports = router
