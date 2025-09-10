@@ -1,0 +1,10 @@
+@apiURL = http://localhost:8080/notes
+
+GET {{apiURL}}
+
+###
+
+POST {{apiURL}}
+Content-Type: application/json 
+
+{"text": "hello!"}
