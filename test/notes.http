@@ -7,14 +7,14 @@ GET {{apiURL}}
 POST {{apiURL}}
 Content-Type: application/json 
 
-{"text": "hello!"}
+{"text": "testing POST again"}
 
 ###
 
 PATCH {{apiURL}}/1 
 Content-Type: application/json
 
-{"text": "morjens!"}
+{"note": "morjens!"}
 
 ###
 
